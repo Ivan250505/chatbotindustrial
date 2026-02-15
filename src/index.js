@@ -1,4 +1,5 @@
-require('dotenv').config();
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '..', '.env') });
 
 const express = require('express');
 const webhookRoutes = require('./routes/webhook.routes');
@@ -52,17 +53,10 @@ async function startServer() {
         console.log('✅ Base de datos conectada correctamente');
         console.log('');
 
-        app.listen(PORT, () => {
+        app.listen(PORT, '0.0.0.0', () => {
             console.log('===========================================');
             console.log(`🚀 SERVIDOR LISTO EN PUERTO ${PORT}`);
             console.log('===========================================');
-            console.log('');
-            console.log('📱 Webhook URL: http://localhost:' + PORT + '/webhook');
-            console.log('');
-            console.log('🔧 Para usar con ngrok:');
-            console.log('   1. Ejecuta: ngrok http ' + PORT);
-            console.log('   2. Copia la URL https://xxx.ngrok.io');
-            console.log('   3. Configura en Meta: https://xxx.ngrok.io/webhook');
             console.log('');
             console.log('⏳ Esperando mensajes de WhatsApp...');
             console.log('');
