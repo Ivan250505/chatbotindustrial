@@ -1,0 +1,151 @@
+Hora: 11/2/2026, 9:51:33 p. m.
+
+📦 BODY COMPLETO:
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "0",
+      "changes": [
+        {
+          "field": "messages",
+          "value": {
+            "messaging_product": "whatsapp",      
+            "metadata": {
+              "display_phone_number": "16505551111",
+              "phone_number_id": "123456123"      
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "test user name"        
+                },
+                "wa_id": "16315551181"
+              }
+            ],
+            "messages": [
+              {
+                "from": "16315551181",
+                "id": "ABGGFlA5Fpa",
+                "timestamp": "1504902988",        
+                "type": "text",
+                "text": {
+                  "body": "this is a text message"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+
+✅ Es un evento de WhatsApp Business
+✅ Respondido 200 a Meta
+
+📋 VALUE: {
+  "messaging_product": "whatsapp",
+  "metadata": {
+    "display_phone_number": "16505551111",        
+    "phone_number_id": "123456123"
+  },
+  "contacts": [
+    {
+      "profile": {
+        "name": "test user name"
+      },
+      "wa_id": "16315551181"
+    }
+  ],
+  "messages": [
+    {
+      "from": "16315551181",
+      "id": "ABGGFlA5Fpa",
+      "timestamp": "1504902988",
+      "type": "text",
+      "text": {
+        "body": "this is a text message"
+      }
+    }
+  ]
+}
+
+👤 DE: 16315551181
+🆔 MESSAGE ID: ABGGFlA5Fpa
+📝 TIPO: text
+💬 CONTENIDO: this is a text message
+
+🚀 Procesando mensaje con conversationService...  
+
+🤖 CONVERSATION SERVICE - handleMessage
+   Telefono: 16315551181
+   Mensaje: this is a text message
+   MessageId: ABGGFlA5Fpa
+   📖 Marcando mensaje como leído...
+Error marcando mensaje como leído: {
+  error: {
+    message: '(#131009) Parameter value is not valid',
+    type: 'OAuthException',
+    code: 131009,
+    error_data: {
+      messaging_product: 'whatsapp',
+      details: 'Input parameter is invalid'       
+    },
+    fbtrace_id: 'As3ef5_WynFIEEVqK-mRxDn'
+  }
+}
+   ✅ Mensaje marcado como leído
+   👤 Obteniendo/creando usuario...
+   🔍 Buscando usuario con telefono: 16315551181  
+   ✅ Usuario existente encontrado, ID: 1
+   ✅ Usuario: {"id":1,"telefono":"16315551181","nombre_completo":null,"correo_electronico":null,"programa_academico":null,"semestre":null,"edad":null,"estado_conversacion":"inicio","fecha_registro":"2026-02-12T06:26:10.000Z","fecha_actualizacion":"2026-02-12T06:26:10.000Z","completado":0}
+   🔄 Procesando estado...
+   📍 Estado actual: inicio
+   🎉 Enviando BIENVENIDA a 16315551181
+📤 Enviando mensaje a 16315551181: ¡Bienvenido(a) al proceso de postulación del *Prog...
+❌ Error enviando mensaje de texto: {
+  error: {
+    message: '(#131030) Recipient phone number not in allowed list',
+    type: 'OAuthException',
+    code: 131030,
+    error_data: {
+      messaging_product: 'whatsapp',
+      details: 'El número de teléfono del destinatario no está en la lista de autorizados: Agrega el número de teléfono del destinatario a la lista de destinatarios y vuelve a intentarlo.'
+    },
+    fbtrace_id: 'Ao3JsszYm1nvJMaHnK9YO2_'
+  }
+}
+
+   ❌❌❌ ERROR EN handleMessage ❌❌❌
+   Mensaje: Request failed with status code 400   
+   Stack: AxiosError: Request failed with status code 400
+    at settle (C:\Users\Lenovo\Documents\Chatbot_Industrial\node_modules\axios\dist\node\axios.cjs:2151:12)
+    at BrotliDecompress.handleStreamEnd (C:\Users\Lenovo\Documents\Chatbot_Industrial\node_modules\axios\dist\node\axios.cjs:3545:11)
+    at BrotliDecompress.emit (node:events:518:28) 
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (C:\Users\Lenovo\Documents\Chatbot_Industrial\node_modules\axios\dist\node\axios.cjs:4796:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async WhatsAppService.sendTextMessage (C:\Users\Lenovo\Documents\Chatbot_Industrial\src\services\whatsapp.service.js:17:30)
+    at async ConversationService.sendWelcome (C:\Users\Lenovo\Documents\Chatbot_Industrial\src\services\conversation.service.js:177:9)
+    at async ConversationService.processState (C:\Users\Lenovo\Documents\Chatbot_Industrial\src\services\conversation.service.js:121:17)
+    at async ConversationService.handleMessage (C:\Users\Lenovo\Documents\Chatbot_Industrial\src\services\conversation.service.js:95:13)
+    at async WebhookController.receiveMessage (C:\Users\Lenovo\Documents\Chatbot_Industrial\src\controllers\webhook.controller.js:113:13)
+📤 Enviando mensaje a 16315551181: Lo sentimos, ocurrió un error. Por favor intente n...
+❌ Error enviando mensaje de texto: {
+  error: {
+    message: '(#131030) Recipient phone number not in allowed list',
+    type: 'OAuthException',
+    code: 131030,
+    error_data: {
+      messaging_product: 'whatsapp',
+      details: 'El número de teléfono del destinatario no está en la lista de autorizados: Agrega el número de teléfono del destinatario a la lista de destinatarios y vuelve a intentarlo.'
+    },
+    fbtrace_id: 'AdXtaY1UMFZwja-qxtyfClG'
+  }
+}
+   Error enviando mensaje de error: Request failed with status code 400
+✅ Mensaje procesado correctamente
+===========================================       
+

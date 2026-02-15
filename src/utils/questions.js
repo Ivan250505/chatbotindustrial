@@ -42,11 +42,17 @@ const PREGUNTAS = {
         categoria: 'RELACIÓN CON LA CARRERA',
         texto: '*Pregunta 1 de 10*\n\n¿Cuál de las siguientes afirmaciones se acerca más a la forma en que percibe la carrera que estudia?',
         tipo: 'opciones',
+        titulos: [
+            'Resolver problemas',
+            'Emprender o liderar',
+            'Campo laboral estable',
+            'Mejorar economía'
+        ],
         opciones: [
-            'Su profesión le interesa como herramienta para analizar y resolver problemas reales',
+            'Su profesión le interesa para analizar y resolver problemas reales',
             'Ve su profesión como una base para emprender o liderar proyectos',
             'Considera que su profesión ofrece amplio campo laboral y estabilidad',
-            'Ve su profesión principalmente como un medio para mejorar su situación económica'
+            'Ve su profesión como un medio para mejorar su situación económica'
         ]
     },
     2: {
@@ -54,6 +60,12 @@ const PREGUNTAS = {
         categoria: 'MOTIVACIÓN PARA PARTICIPAR',
         texto: '*Pregunta 2 de 10*\n\n¿Cuál es la principal razón por la que desea postularse a este programa?',
         tipo: 'opciones',
+        titulos: [
+            'Experiencia real',
+            'Algo distinto',
+            'Confirmar vocación',
+            'Reconocimiento económico'
+        ],
         opciones: [
             'Quiere adquirir experiencia real, pero no ha encontrado cómo hacerlo',
             'Quiere probar algo distinto a las clases tradicionales',
@@ -66,6 +78,12 @@ const PREGUNTAS = {
         categoria: 'DISPONIBILIDAD DE TIEMPO',
         texto: '*Pregunta 3 de 10*\n\nDurante las 12 semanas del programa, ¿cuánto tiempo semanal podría dedicar de forma constante?',
         tipo: 'opciones',
+        titulos: [
+            '0 a 6 horas',
+            '7 a 15 horas',
+            '16 a 25 horas',
+            'Las horas necesarias'
+        ],
         opciones: [
             'Entre 0 y 6 horas',
             'Entre 7 y 15 horas',
@@ -78,6 +96,12 @@ const PREGUNTAS = {
         categoria: 'EXPECTATIVAS DE RESULTADO',
         texto: '*Pregunta 4 de 10*\n\nAl finalizar el programa, ¿cuál considera que sería el resultado más valioso para usted?',
         tipo: 'opciones',
+        titulos: [
+            'Experiencia en HV',
+            'Ingreso económico',
+            'Vocación profesional',
+            'Otro resultado'
+        ],
         opciones: [
             'Contar con una experiencia aplicable a la hoja de vida',
             'Obtener un ingreso económico',
@@ -90,6 +114,12 @@ const PREGUNTAS = {
         categoria: 'FORMA DE TRABAJAR EN EQUIPO',
         texto: '*Pregunta 5 de 10*\n\nEn trabajos académicos o proyectos, ¿cuál de las siguientes frases lo describe mejor?',
         tipo: 'opciones',
+        titulos: [
+            'Ejecutor de tareas',
+            'Organizador',
+            'Criterio y claridad',
+            'Trabajo individual'
+        ],
         opciones: [
             'Generalmente es quien ejecuta y saca adelante las tareas',
             'Suele asumir el rol de organizar, coordinar y dar orden',
@@ -102,6 +132,12 @@ const PREGUNTAS = {
         categoria: 'PRIORIDADES PERSONALES',
         texto: '*Pregunta 6 de 10*\n\nEn este momento de su vida académica, ¿qué considera más importante?',
         tipo: 'opciones',
+        titulos: [
+            'Formación y aprendizaje',
+            'Graduarse',
+            'Generar ingresos',
+            'Pasión profesional'
+        ],
         opciones: [
             'El proceso de formación y aprendizaje',
             'Finalizar la carrera y graduarse',
@@ -120,6 +156,11 @@ const PREGUNTAS = {
         categoria: 'HABILIDADES DIGITALES',
         texto: '*Pregunta 8 de 10*\n\n¿Cómo describiría su manejo de herramientas digitales (ofimática, plataformas y dispositivos tecnológicos)?',
         tipo: 'opciones',
+        titulos: [
+            'Avanzado',
+            'Funcional',
+            'Con dificultad'
+        ],
         opciones: [
             'Manejo avanzado y aprendizaje autónomo de nuevas herramientas',
             'Manejo funcional: no domina todas, pero se adapta con facilidad',
@@ -131,6 +172,11 @@ const PREGUNTAS = {
         categoria: 'INTELIGENCIA ARTIFICIAL',
         texto: '*Pregunta 9 de 10*\n\n¿Cómo describiría su manejo de inteligencia artificial?',
         tipo: 'opciones',
+        titulos: [
+            'Avanzado',
+            'Funcional',
+            'Con dificultad'
+        ],
         opciones: [
             'Manejo avanzado y aprendizaje autónomo de nuevas herramientas',
             'Manejo funcional: no domina todas, pero se adapta con facilidad',
@@ -142,6 +188,15 @@ const PREGUNTAS = {
         categoria: 'INTERÉS EN ÁREAS DE CONSULTORÍA',
         texto: '*Pregunta 10 de 10*\n\n¿En cuál de las siguientes áreas de consultoría le gustaría participar?',
         tipo: 'opciones',
+        titulos: [
+            'Producción y calidad',
+            'SST',
+            'Marketing',
+            'Transformación digital',
+            'Innovación y estrategia',
+            'Gestión documental',
+            'Redes sociales'
+        ],
         opciones: [
             'Producción y calidad',
             'Seguridad y salud en el trabajo',

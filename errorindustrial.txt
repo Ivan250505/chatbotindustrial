@@ -1,0 +1,891 @@
+PS C:\Users\Lenovo\Documents\Chatbot_Industrial> npm run dev
+
+> chatbot-jovenes-consultores@1.0.0 dev
+> nodemon src/index.js
+
+[nodemon] 3.1.11
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node src/index.js`
+🔗 WhatsApp API URL: https://graph.facebook.com/v22.0/964848190050946/messages
+
+===========================================
+🤖 CHATBOT JÓVENES CONSULTORES - UTS
+===========================================
+
+📋 CONFIGURACIÓN:
+   PHONE_NUMBER_ID: 964848190050946
+   VERIFY_TOKEN: 123456whatsapp
+   WHATSAPP_TOKEN: ✅ Configurado (EAAMGOPDBr3kBQlVakKZ...)
+   DB_HOST: localhost
+   DB_NAME: industrial
+   PORT: 3000
+
+🔌 Conectando a base de datos...
+📊 Conexión a MySQL establecida
+📋 Tablas verificadas/creadas correctamente
+✅ Base de datos conectada correctamente
+
+===========================================
+🚀 SERVIDOR LISTO EN PUERTO 3000
+===========================================
+
+📱 Webhook URL: http://localhost:3000/webhook
+
+🔧 Para usar con ngrok:
+   1. Ejecuta: ngrok http 3000
+   2. Copia la URL https://xxx.ngrok.io
+   3. Configura en Meta: https://xxx.ngrok.io/webhook
+
+⏳ Esperando mensajes de WhatsApp...
+
+PS C:\Users\Lenovo\Documents\Chatbot_Industrial> npm run dev
+
+> chatbot-jovenes-consultores@1.0.0 dev
+> nodemon src/index.js
+
+[nodemon] 3.1.11
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node src/index.js`
+🔗 WhatsApp API URL: https://graph.facebook.com/v22.0/964848190050946/messages
+
+===========================================
+🤖 CHATBOT JÓVENES CONSULTORES - UTS
+===========================================
+
+📋 CONFIGURACIÓN:
+   PHONE_NUMBER_ID: 964848190050946
+   VERIFY_TOKEN: 123456whatsapp
+   WHATSAPP_TOKEN: ✅ Configurado (EAAMGOPDBr3kBQliStEu...)
+   DB_HOST: localhost
+   DB_NAME: industrial
+   PORT: 3000
+
+🔌 Conectando a base de datos...
+📊 Conexión a MySQL establecida
+📋 Tablas verificadas/creadas correctamente
+✅ Base de datos conectada correctamente
+
+===========================================
+🚀 SERVIDOR LISTO EN PUERTO 3000
+===========================================
+
+📱 Webhook URL: http://localhost:3000/webhook
+
+🔧 Para usar con ngrok:
+   1. Ejecuta: ngrok http 3000
+   2. Copia la URL https://xxx.ngrok.io
+   3. Configura en Meta: https://xxx.ngrok.io/webhook
+
+⏳ Esperando mensajes de WhatsApp...
+
+PS C:\Users\Lenovo\Documents\Chatbot_Industrial> npm run dev
+
+> chatbot-jovenes-consultores@1.0.0 dev
+> nodemon src/index.js
+
+[nodemon] 3.1.11
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node src/index.js`
+🔗 WhatsApp API URL: https://graph.facebook.com/v22.0/964848190050946/messages
+
+===========================================
+🤖 CHATBOT JÓVENES CONSULTORES - UTS
+===========================================
+
+📋 CONFIGURACIÓN:
+   PHONE_NUMBER_ID: 964848190050946
+   VERIFY_TOKEN: 123456whatsapp
+   WHATSAPP_TOKEN: ✅ Configurado (EAAMGOPDBr3kBQliStEu...)
+   DB_HOST: localhost
+   DB_NAME: industrial
+   PORT: 3000
+
+🔌 Conectando a base de datos...
+📊 Conexión a MySQL establecida
+📋 Tablas verificadas/creadas correctamente
+✅ Base de datos conectada correctamente
+
+===========================================
+🚀 SERVIDOR LISTO EN PUERTO 3000
+===========================================
+
+📱 Webhook URL: http://localhost:3000/webhook
+
+🔧 Para usar con ngrok:
+   1. Ejecuta: ngrok http 3000
+   2. Copia la URL https://xxx.ngrok.io
+   3. Configura en Meta: https://xxx.ngrok.io/webhook
+
+⏳ Esperando mensajes de WhatsApp...
+
+📥 POST /webhook
+
+===========================================
+📨 NUEVO MENSAJE RECIBIDO EN WEBHOOK
+===========================================
+Hora: 12/2/2026, 9:17:32 a. m.
+
+📦 BODY COMPLETO:
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1167742608770103",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556505632",
+              "phone_number_id": "964848190050946"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Ivan"
+                },
+                "wa_id": "573203350186"
+              }
+            ],
+            "messages": [
+              {
+                "from": "573203350186",
+                "id": "wamid.HBgMNTczMjAzMzUwMTg2FQIAEhggQUMyODEzQjZBOTAyNEZBQjg0RTIxMjVFQUIxNzhDM0UA",
+                "timestamp": "1770905851",
+                "text": {
+                  "body": "Hola"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+
+✅ Es un evento de WhatsApp Business
+✅ Respondido 200 a Meta
+
+📋 VALUE: {
+  "messaging_product": "whatsapp",
+  "metadata": {
+    "display_phone_number": "15556505632",
+    "phone_number_id": "964848190050946"
+  },
+  "contacts": [
+    {
+      "profile": {
+        "name": "Ivan"
+      },
+      "wa_id": "573203350186"
+    }
+  ],
+  "messages": [
+    {
+      "from": "573203350186",
+      "id": "wamid.HBgMNTczMjAzMzUwMTg2FQIAEhggQUMyODEzQjZBOTAyNEZBQjg0RTIxMjVFQUIxNzhDM0UA",
+      "timestamp": "1770905851",
+      "text": {
+        "body": "Hola"
+      },
+      "type": "text"
+    }
+  ]
+}
+
+👤 DE: 573203350186
+🆔 MESSAGE ID: wamid.HBgMNTczMjAzMzUwMTg2FQIAEhggQUMyODEzQjZBOTAyNEZBQjg0RTIxMjVFQUIxNzhDM0UA
+📝 TIPO: text
+💬 CONTENIDO: Hola
+
+🚀 Procesando mensaje con conversationService...
+
+🤖 CONVERSATION SERVICE - handleMessage
+   Telefono: 573203350186
+   Mensaje: Hola
+   MessageId: wamid.HBgMNTczMjAzMzUwMTg2FQIAEhggQUMyODEzQjZBOTAyNEZBQjg0RTIxMjVFQUIxNzhDM0UA
+   📖 Marcando mensaje como leído...
+   ✅ Mensaje marcado como leído
+   👤 Obteniendo/creando usuario...
+   🔍 Buscando usuario con telefono: 573203350186
+   🆕 Usuario no existe, creando nuevo...
+   ✅ Nuevo usuario creado, ID: 1
+   ✅ Usuario: {"id":1,"telefono":"573203350186","estado_conversacion":"inicio"}
+   🔄 Procesando estado...
+   📍 Estado actual: inicio
+   🎉 Enviando BIENVENIDA a 573203350186
+📤 Enviando mensaje a 573203350186: ¡Bienvenido(a) al proceso de postulación del *Prog...
+✅ Mensaje enviado correctamente
+   ✅ Mensaje de bienvenida enviado
+📥 POST /webhook
+
+===========================================
+📨 NUEVO MENSAJE RECIBIDO EN WEBHOOK
+===========================================
+Hora: 12/2/2026, 9:17:35 a. m.
+
+📦 BODY COMPLETO:
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1167742608770103",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556505632",
+              "phone_number_id": "964848190050946"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMNTczMjAzMzUwMTg2FQIAERgSOEQ4MzIyODkwMDc4NUUzQjY2AA==",
+                "status": "sent",
+                "timestamp": "1770905854",
+                "recipient_id": "573203350186",
+                "pricing": {
+                  "billable": false,
+                  "pricing_model": "PMP",
+                  "category": "service",
+                  "type": "free_customer_service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+
+✅ Es un evento de WhatsApp Business
+✅ Respondido 200 a Meta
+
+📋 VALUE: {
+  "messaging_product": "whatsapp",
+  "metadata": {
+    "display_phone_number": "15556505632",
+    "phone_number_id": "964848190050946"
+  },
+  "statuses": [
+    {
+      "id": "wamid.HBgMNTczMjAzMzUwMTg2FQIAERgSOEQ4MzIyODkwMDc4NUUzQjY2AA==",
+      "status": "sent",
+      "timestamp": "1770905854",
+      "recipient_id": "573203350186",
+      "pricing": {
+        "billable": false,
+        "pricing_model": "PMP",
+        "category": "service",
+        "type": "free_customer_service"
+      }
+    }
+  ]
+}
+ℹ️ Evento sin mensajes (posible status update)
+===========================================
+   📋 Enviando CONTEXTO...
+📤 Enviando mensaje a 573203350186: 📋 *Información importante:*
+
+Esta conversación ha...
+📥 POST /webhook
+
+===========================================
+📨 NUEVO MENSAJE RECIBIDO EN WEBHOOK
+===========================================
+Hora: 12/2/2026, 9:17:35 a. m.
+
+📦 BODY COMPLETO:
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1167742608770103",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556505632",
+              "phone_number_id": "964848190050946"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMNTczMjAzMzUwMTg2FQIAERgSOEQ4MzIyODkwMDc4NUUzQjY2AA==",
+                "status": "delivered",
+                "timestamp": "1770905854",
+                "recipient_id": "573203350186",
+                "pricing": {
+                  "billable": false,
+                  "pricing_model": "PMP",
+                  "category": "service",
+                  "type": "free_customer_service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+
+✅ Es un evento de WhatsApp Business
+✅ Respondido 200 a Meta
+
+📋 VALUE: {
+  "messaging_product": "whatsapp",
+  "metadata": {
+    "display_phone_number": "15556505632",
+    "phone_number_id": "964848190050946"
+  },
+  "statuses": [
+    {
+      "id": "wamid.HBgMNTczMjAzMzUwMTg2FQIAERgSOEQ4MzIyODkwMDc4NUUzQjY2AA==",
+      "status": "delivered",
+      "timestamp": "1770905854",
+      "recipient_id": "573203350186",
+      "pricing": {
+        "billable": false,
+        "pricing_model": "PMP",
+        "category": "service",
+        "type": "free_customer_service"
+      }
+    }
+  ]
+}
+ℹ️ Evento sin mensajes (posible status update)
+===========================================
+📥 POST /webhook
+
+===========================================
+📨 NUEVO MENSAJE RECIBIDO EN WEBHOOK
+===========================================
+Hora: 12/2/2026, 9:17:36 a. m.
+
+📦 BODY COMPLETO:
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1167742608770103",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556505632",
+              "phone_number_id": "964848190050946"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMNTczMjAzMzUwMTg2FQIAERgSOEQ4MzIyODkwMDc4NUUzQjY2AA==",
+                "status": "delivered",
+                "timestamp": "1770905854",
+                "recipient_id": "573203350186",
+                "pricing": {
+                  "billable": false,
+                  "pricing_model": "PMP",
+                  "category": "service",
+                  "type": "free_customer_service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+
+✅ Es un evento de WhatsApp Business
+✅ Respondido 200 a Meta
+
+📋 VALUE: {
+  "messaging_product": "whatsapp",
+  "metadata": {
+    "display_phone_number": "15556505632",
+    "phone_number_id": "964848190050946"
+  },
+  "statuses": [
+    {
+      "id": "wamid.HBgMNTczMjAzMzUwMTg2FQIAERgSOEQ4MzIyODkwMDc4NUUzQjY2AA==",
+      "status": "delivered",
+      "timestamp": "1770905854",
+      "recipient_id": "573203350186",
+      "pricing": {
+        "billable": false,
+        "pricing_model": "PMP",
+        "category": "service",
+        "type": "free_customer_service"
+      }
+    }
+  ]
+}
+ℹ️ Evento sin mensajes (posible status update)
+===========================================
+✅ Mensaje enviado correctamente
+   ✅ Contexto enviado
+   🔄 Actualizando estado a pregunta_1...
+📥 POST /webhook
+
+===========================================
+📨 NUEVO MENSAJE RECIBIDO EN WEBHOOK
+===========================================
+Hora: 12/2/2026, 9:17:37 a. m.
+
+📦 BODY COMPLETO:
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1167742608770103",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556505632",
+              "phone_number_id": "964848190050946"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMNTczMjAzMzUwMTg2FQIAERgSQzU3QjNCMzZGMDA4Q0NFRURBAA==",
+                "status": "delivered",
+                "timestamp": "1770905856",
+                "recipient_id": "573203350186",
+                "pricing": {
+                  "billable": false,
+                  "pricing_model": "PMP",
+                  "category": "service",
+                  "type": "free_customer_service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+
+✅ Es un evento de WhatsApp Business
+✅ Respondido 200 a Meta
+
+📋 VALUE: {
+  "messaging_product": "whatsapp",
+  "metadata": {
+    "display_phone_number": "15556505632",
+    "phone_number_id": "964848190050946"
+  },
+  "statuses": [
+    {
+      "id": "wamid.HBgMNTczMjAzMzUwMTg2FQIAERgSQzU3QjNCMzZGMDA4Q0NFRURBAA==",
+      "status": "delivered",
+      "timestamp": "1770905856",
+      "recipient_id": "573203350186",
+      "pricing": {
+        "billable": false,
+        "pricing_model": "PMP",
+        "category": "service",
+        "type": "free_customer_service"
+      }
+    }
+  ]
+}
+ℹ️ Evento sin mensajes (posible status update)
+===========================================
+📥 POST /webhook
+
+===========================================
+📨 NUEVO MENSAJE RECIBIDO EN WEBHOOK
+===========================================
+Hora: 12/2/2026, 9:17:37 a. m.
+
+📦 BODY COMPLETO:
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1167742608770103",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556505632",
+              "phone_number_id": "964848190050946"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMNTczMjAzMzUwMTg2FQIAERgSQzU3QjNCMzZGMDA4Q0NFRURBAA==",
+                "status": "delivered",
+                "timestamp": "1770905856",
+                "recipient_id": "573203350186",
+                "pricing": {
+                  "billable": false,
+                  "pricing_model": "PMP",
+                  "category": "service",
+                  "type": "free_customer_service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+
+✅ Es un evento de WhatsApp Business
+✅ Respondido 200 a Meta
+
+📋 VALUE: {
+  "messaging_product": "whatsapp",
+  "metadata": {
+    "display_phone_number": "15556505632",
+    "phone_number_id": "964848190050946"
+  },
+  "statuses": [
+    {
+      "id": "wamid.HBgMNTczMjAzMzUwMTg2FQIAERgSQzU3QjNCMzZGMDA4Q0NFRURBAA==",
+      "status": "delivered",
+      "timestamp": "1770905856",
+      "recipient_id": "573203350186",
+      "pricing": {
+        "billable": false,
+        "pricing_model": "PMP",
+        "category": "service",
+        "type": "free_customer_service"
+      }
+    }
+  ]
+}
+ℹ️ Evento sin mensajes (posible status update)
+===========================================
+   ❓ Enviando pregunta 1...
+📥 POST /webhook
+
+===========================================
+📨 NUEVO MENSAJE RECIBIDO EN WEBHOOK
+===========================================
+Hora: 12/2/2026, 9:17:37 a. m.
+
+📦 BODY COMPLETO:
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1167742608770103",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556505632",
+              "phone_number_id": "964848190050946"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMNTczMjAzMzUwMTg2FQIAERgSQzU3QjNCMzZGMDA4Q0NFRURBAA==",
+                "status": "sent",
+                "timestamp": "1770905855",
+                "recipient_id": "573203350186",
+                "pricing": {
+                  "billable": false,
+                  "pricing_model": "PMP",
+                  "category": "service",
+                  "type": "free_customer_service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+
+✅ Es un evento de WhatsApp Business
+✅ Respondido 200 a Meta
+
+📋 VALUE: {
+  "messaging_product": "whatsapp",
+  "metadata": {
+    "display_phone_number": "15556505632",
+    "phone_number_id": "964848190050946"
+  },
+  "statuses": [
+    {
+      "id": "wamid.HBgMNTczMjAzMzUwMTg2FQIAERgSQzU3QjNCMzZGMDA4Q0NFRURBAA==",
+      "status": "sent",
+      "timestamp": "1770905855",
+      "recipient_id": "573203350186",
+      "pricing": {
+        "billable": false,
+        "pricing_model": "PMP",
+        "category": "service",
+        "type": "free_customer_service"
+      }
+    }
+  ]
+}
+ℹ️ Evento sin mensajes (posible status update)
+===========================================
+Error enviando lista: {
+  error: {
+    message: '(#131009) Parameter value is not valid',
+    type: 'OAuthException',
+    code: 131009,
+    error_data: {
+      messaging_product: 'whatsapp',
+      details: 'Row description is too long. Max length is 72'
+    },
+    fbtrace_id: 'AfAp_YYFtwqz_tslr-u5BWc'
+  }
+}
+
+   ❌❌❌ ERROR EN handleMessage ❌❌❌
+   Mensaje: Request failed with status code 400
+   Stack: AxiosError: Request failed with status code 400
+    at settle (C:\Users\Lenovo\Documents\Chatbot_Industrial\node_modules\axios\dist\node\axios.cjs:2151:12)
+    at BrotliDecompress.handleStreamEnd (C:\Users\Lenovo\Documents\Chatbot_Industrial\node_modules\axios\dist\node\axios.cjs:3545:11)
+    at BrotliDecompress.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (C:\Users\Lenovo\Documents\Chatbot_Industrial\node_modules\axios\dist\node\axios.cjs:4796:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async WhatsAppService.sendInteractiveList (C:\Users\Lenovo\Documents\Chatbot_Industrial\src\services\whatsapp.service.js:64:30)
+    at async ConversationService.sendQuestion (C:\Users\Lenovo\Documents\Chatbot_Industrial\src\services\conversation.service.js:218:17)
+    at async ConversationService.sendWelcome (C:\Users\Lenovo\Documents\Chatbot_Industrial\src\services\conversation.service.js:194:9)
+    at async ConversationService.processState (C:\Users\Lenovo\Documents\Chatbot_Industrial\src\services\conversation.service.js:121:17)
+    at async ConversationService.handleMessage (C:\Users\Lenovo\Documents\Chatbot_Industrial\src\services\conversation.service.js:95:13)
+    at async WebhookController.receiveMessage (C:\Users\Lenovo\Documents\Chatbot_Industrial\src\controllers\webhook.controller.js:113:13)
+📤 Enviando mensaje a 573203350186: Lo sentimos, ocurrió un error. Por favor intente n...
+✅ Mensaje enviado correctamente
+✅ Mensaje procesado correctamente
+===========================================
+
+📥 POST /webhook
+
+===========================================
+📨 NUEVO MENSAJE RECIBIDO EN WEBHOOK
+===========================================
+Hora: 12/2/2026, 9:17:38 a. m.
+
+📦 BODY COMPLETO:
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1167742608770103",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556505632",
+              "phone_number_id": "964848190050946"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMNTczMjAzMzUwMTg2FQIAERgSRDFFODU1MzBEQzYyODAxQTQ4AA==",
+                "status": "sent",
+                "timestamp": "1770905857",
+                "recipient_id": "573203350186",
+                "pricing": {
+                  "billable": false,
+                  "pricing_model": "PMP",
+                  "category": "service",
+                  "type": "free_customer_service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+
+✅ Es un evento de WhatsApp Business
+✅ Respondido 200 a Meta
+
+📋 VALUE: {
+  "messaging_product": "whatsapp",
+  "metadata": {
+    "display_phone_number": "15556505632",
+    "phone_number_id": "964848190050946"
+  },
+  "statuses": [
+    {
+      "id": "wamid.HBgMNTczMjAzMzUwMTg2FQIAERgSRDFFODU1MzBEQzYyODAxQTQ4AA==",
+      "status": "sent",
+      "timestamp": "1770905857",
+      "recipient_id": "573203350186",
+      "pricing": {
+        "billable": false,
+        "pricing_model": "PMP",
+        "category": "service",
+        "type": "free_customer_service"
+      }
+    }
+  ]
+}
+ℹ️ Evento sin mensajes (posible status update)
+===========================================
+📥 POST /webhook
+
+===========================================
+📨 NUEVO MENSAJE RECIBIDO EN WEBHOOK
+===========================================
+Hora: 12/2/2026, 9:17:39 a. m.
+
+📦 BODY COMPLETO:
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1167742608770103",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556505632",
+              "phone_number_id": "964848190050946"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMNTczMjAzMzUwMTg2FQIAERgSRDFFODU1MzBEQzYyODAxQTQ4AA==",
+                "status": "delivered",
+                "timestamp": "1770905858",
+                "recipient_id": "573203350186",
+                "pricing": {
+                  "billable": false,
+                  "pricing_model": "PMP",
+                  "category": "service",
+                  "type": "free_customer_service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+
+✅ Es un evento de WhatsApp Business
+✅ Respondido 200 a Meta
+
+📋 VALUE: {
+  "messaging_product": "whatsapp",
+  "metadata": {
+    "display_phone_number": "15556505632",
+    "phone_number_id": "964848190050946"
+  },
+  "statuses": [
+    {
+      "id": "wamid.HBgMNTczMjAzMzUwMTg2FQIAERgSRDFFODU1MzBEQzYyODAxQTQ4AA==",
+      "status": "delivered",
+      "timestamp": "1770905858",
+      "recipient_id": "573203350186",
+      "pricing": {
+        "billable": false,
+        "pricing_model": "PMP",
+        "category": "service",
+        "type": "free_customer_service"
+      }
+    }
+  ]
+}
+ℹ️ Evento sin mensajes (posible status update)
+===========================================
+📥 POST /webhook
+
+===========================================
+📨 NUEVO MENSAJE RECIBIDO EN WEBHOOK
+===========================================
+Hora: 12/2/2026, 9:17:39 a. m.
+
+📦 BODY COMPLETO:
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1167742608770103",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556505632",
+              "phone_number_id": "964848190050946"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgMNTczMjAzMzUwMTg2FQIAERgSRDFFODU1MzBEQzYyODAxQTQ4AA==",
+                "status": "delivered",
+                "timestamp": "1770905858",
+                "recipient_id": "573203350186",
+                "pricing": {
+                  "billable": false,
+                  "pricing_model": "PMP",
+                  "category": "service",
+                  "type": "free_customer_service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+
+✅ Es un evento de WhatsApp Business
+✅ Respondido 200 a Meta
+
+📋 VALUE: {
+  "messaging_product": "whatsapp",
+  "metadata": {
+    "display_phone_number": "15556505632",
+    "phone_number_id": "964848190050946"
+  },
+  "statuses": [
+    {
+      "id": "wamid.HBgMNTczMjAzMzUwMTg2FQIAERgSRDFFODU1MzBEQzYyODAxQTQ4AA==",
+      "status": "delivered",
+      "timestamp": "1770905858",
+      "recipient_id": "573203350186",
+      "pricing": {
+        "billable": false,
+        "pricing_model": "PMP",
+        "category": "service",
+        "type": "free_customer_service"
+      }
+    }
+  ]
+}
+ℹ️ Evento sin mensajes (posible status update)
+===========================================
